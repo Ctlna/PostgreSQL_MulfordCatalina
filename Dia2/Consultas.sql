@@ -63,3 +63,8 @@ CREATE TRIGGER trigger_delete_regiones
 AFTER DELETE ON regiones
 FOR EACH ROW
 EXECUTE FUNCTION actualizar_totales();
+
+
+-- columnas de departamento, municipio con las actualizaciones
+select departamento, municipio, total_trabajadores, total_habitantes
+from regiones;
