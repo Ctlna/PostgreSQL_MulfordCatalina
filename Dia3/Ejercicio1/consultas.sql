@@ -205,3 +205,5 @@ from cliente c
 left join pedido p ON c.codigo_cliente = p.codigo_cliente
 left join pago pa ON c.codigo_cliente = pa.codigo_cliente
 where p.codigo_pedido IS NULL AND pa.codigo_cliente IS NULL;
+
+
